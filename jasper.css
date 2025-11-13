@@ -11,6 +11,14 @@ header {
    font-weight: bold;
 }
 
+footer {
+    margin: 25px;
+}
+
+footer p {
+    text-align: center;
+}
+
 h2 {
     color: white;
     text-align: center;
