@@ -27,12 +27,37 @@ h2 {
 
 img {
     width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .zdjecia .zdj, 
+    .filmy .film {
+        flex: 1 1 100%; /* każdy element zajmuje całą szerokość */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+
+    .zdj, .film {
+        padding: 10px;
+    }
 }
 
 .film iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
     border: none;
+    display: block;
 }
 
 .zdjecia {
@@ -50,7 +75,7 @@ img {
     text-align: center;
     font-size: larger;
     box-sizing: border-box;
-    width: 300px;
+    max-width: 100%;
 }
 
 .filmy {
@@ -68,5 +93,5 @@ img {
     text-align: center;
     font-size: larger;
     box-sizing: border-box;
-    width: 300px;
+    max-width: 100%;
 }
